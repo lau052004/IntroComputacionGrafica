@@ -25,12 +25,13 @@ def init_ortho():
 
 
 def plot_polygon():
+    # GL_POINTS
     # GL_TRIANGLES
     # GL_TRIANGLE_STRIP
     # GL_TRIANGLE_FAN
     # GL_QUADS
     # GL_QUAD_STRIP
-    glBegin(GL_POINTS)
+    glBegin(GL_QUAD_STRIP)
     for p in points:
         glVertex2f(p[0], p[1])
     glEnd()
